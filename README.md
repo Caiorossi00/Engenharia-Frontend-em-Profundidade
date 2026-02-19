@@ -341,8 +341,8 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
 
 ### 22. Testes básicos
 
-- Testes unitários
-- Casos de teste
+- [x]Testes unitários - (19/02/2026)
+- [x] Casos de teste - (19/02/2026)
 
 ---
 

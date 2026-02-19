@@ -1,0 +1,8 @@
+- [x] Referências persistentes - (13/02/2026)
+Casos de teste são os cenários específicos que validam o comportamento de uma unidade de código sob determinadas condições. Enquanto o teste unitário é a estrutura automatizada que executa verificações, o caso de teste define o contexto, a entrada, a ação executada e o resultado esperado. Em outras palavras, ele responde à pergunta: "Dado esse cenário, o sistema deve se comportar dessa forma?". Um bom caso de teste deixa explícito qual comportamento está sendo validado, tornando o teste claro e intencional. 
+
+Normalmente, os casos de teste seguem uma estrutura lógica conhecida como arrange, act e assert. Primeiro prepara-se o cenário e os dados necessários, depois executa-se a ação (a função ou o método que está sendo testado), por fim, valida-se o resultado correspondente ao esperado. Essa organização aumenta a legibilidade e facilita a manutenção da suíte de testes, especialmente em projetos maiores. 
+
+Existem diferentes tipos de casos de teste que contribuem para a robustez do sistema. O chamado "caso feliz" valida o comportamento em condições normais. Já os casos de borda verificam situações extremas, como valores mínimos, máximos, entradas vazias ou limites numéricos. Há também os casos inválidos, que testam como o sistema reage a entradas incorretas ou inesperadas, validando o fluxo de erro. Além disso, casos de regressão garantem que bugs corrigidos anteriormente não reapareçam em versões futuras. 
+
+Casos de teste bem definidos aumentam a previsibilidade, reduzem riscos e funcionam como documentação executável do comportamento esperado do sistema. Uma suíte de testes só é realmente eficaz quando seus casos são claros, específicos e cobrem cenários relevantes, tanto positivos quanto negativos. 

@@ -1,0 +1,19 @@
+Testes unitários são testes automatizados que validam o comportamento de uma unidade isolada de código, normalmente uma função, método ou módulo específico. O objetivo é garantir que aquela unidade produza o resultado esperado para determinadas entradas, independentemente do restante do sistema.
+
+A palavra "unitário" implica isolamento. Um teste unitário não deve depender de banco de dados real, requisições HTTP reais ou estado global complexo. A unidade deve ser avaliada de forma controlada, com dependências simuladas quando necessário. Isso garante que falhas sejam localizadas com precisão e que o teste seja rápido e determinístico.
+
+O foco de um teste unitário é comportamento, não implementação. O que importa é verificar se, dado um conjunto de entradas e condições, a saída ou o efeito produzido corresponde ao esperado. Alterações internas na implementação não deveriam quebrar o teste, desde que o contrato externo permaneça o mesmo. 
+
+Uma característica importante de testes unitários é que eles devem ser: 
+- Pequenos - testam uma única responsabilidade
+- Rápidos - executam em milissegundos
+- Determinísticos - sempre produzem o mesmo resultado
+- Independentes - Não dependem da execução de outros testes
+
+Em termos de robustez, testes unitários ajudam a prevenir regressões, documentar o comportamento esperado, facilitar refatorações e aumentar a confiança na evolução do código. 
+
+Do ponto de vista de qualidade, escrever testes unitários força clareza arquitetural. Funções muito acopladas, com múltiplas responsabilidades ou dependências implícitas, tornam-se difíceis de testar. Assim, a prática de testes frequentemente melhora o design do sistema. 
+
+Em resumo, testes unitários são a base da qualidade em software. Eles validam pequenas partes do sistema de forma isolada, garantem previsibilidade e criam uma rede de segurança que permite evoluir o código com confiança. 
+
+
