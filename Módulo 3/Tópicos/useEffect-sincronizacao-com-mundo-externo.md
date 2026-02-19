@@ -33,7 +33,7 @@ Antes de avançar, precisamos entender o que é uma **closure**: funções que a
 
 Exemplo:
 
-\`\`\`js
+```js
 let nome = "Caio";
 
 function sayHello() {
@@ -41,13 +41,13 @@ console.log(nome);
 }
 
 sayHello();
-\`\`\`
+```
 
 Agora, pense em um componente React como uma função que é chamada várias vezes. Cada render cria um novo escopo e, portanto, novas closures.
 
 Exemplo:
 
-\`\`\`js
+```js
 function Contador() {
 const [count, setCount] = useState(0);
 
@@ -58,7 +58,7 @@ setCount(count + 1);
 console.log("Renderizou com count =", count);
 return <button onClick={handleClick}>{count}</button>;
 }
-\`\`\`
+```
 
 Explicação:
 
@@ -81,9 +81,9 @@ Para evitar:
 - Usar corretamente o **array de dependências** do `useEffect`, listando todas as variáveis externas que o efeito utiliza
 - Usar a **função de atualização do estado**:
 
-\`\`\`js
+```js
 setState(prev => newState)
-\`\`\`
+```
 
 que sempre acessa o valor mais recente da gaveta de estado
 

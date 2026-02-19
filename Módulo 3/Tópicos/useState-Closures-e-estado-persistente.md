@@ -5,12 +5,12 @@
 Cada `useState` cria uma gaveta interna no React, que guarda o valor do estado entre renders.  
 Mesmo que a função do componente seja chamada várias vezes, o React recupera o valor da gaveta correta, mantendo o estado atualizado.
 
-\`\`\`js
+```js
 function Contador() {
 const [count, setCount] = useState(0);
 return <button onClick={() => setCount(count + 1)}>{count}</button>;
 }
-\`\`\`
+```
 
 - O `0` é passado ao `useState` e só é usado na primeira renderização
 - Nas renderizações seguintes, o React devolve o valor guardado internamente, que pode ser 1, 2, 3, conforme os cliques
@@ -52,8 +52,8 @@ Por isso, se chamamos `setCount(count + 1)` várias vezes dentro do mesmo evento
 
 Para contornar esse comportamento e garantir que cada atualização use o **valor mais recente da gaveta de estado**, devemos usar a **função de atualização**:
 
-\`\`\`js
+```js
 setCount(prev => prev + 1)
-\`\`\`
+```
 
 Essa função acessa diretamente o estado atual armazenado pelo React e aplica a mudança de forma segura, independentemente das closures ou do batching de atualizações.
