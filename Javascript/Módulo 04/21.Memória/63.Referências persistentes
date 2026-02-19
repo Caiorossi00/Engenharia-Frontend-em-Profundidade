@@ -1,0 +1,14 @@
+Referências persistentes são referências que permanecem vivas ao longo do tempo, mantendo valores na memória mesmo quando eles já não são mais necessários do ponto de vista lógico da aplicação. Elas não são um problema por si só, mas se tornam perigosas quando prolongam indevidamente o ciclo de vida de objetos, impedindo o garbage collector de liberá-los.
+
+Uma referência persistente existe sempre que algum identificador, estrutura ou função continua apontando para um valor. Enquanto esse vínculo existir, o valor é considerado alcançável e, portanto, não pode ser coletado. Em javascript, isso acontece com frequência em escopos globais, closures, callbacks registrados, timers ativos e listeners de eventos. 
+
+Closures são um exemplo clássico de como referências persistentes surgem de forma sutil. Quando uma função interna captura variáveis do escopo externo, essas variáveis permanecem vivas enquanto a função existir. Se essa função for armazenada em uma estrutura de longa duração, todo o escopo capturado se torna persistente, mesmo que apenas uma parte mínima dele seja utilizada.
+
+Outro caso comum envolve event listeners e timers. Funções registradas com addEventListener, setInterval ou setTimeout mantêm referências às variáveis que capturam. Se esses registros não forem removidos ou cancelados, as referências continuam ativas, prolongando a vida de dados que poderiam ser descartados. 
+
+Estruturas como caches, singletons e estados globais também criam referências persistentes por design. Elas são úteis para compartilhar dados, mas exigem políticas claras de invalidação ou limpeza. Sem isso, tendem a crescer indefinidamente, retendo memória desnecessária.
+
+Do ponto de vista do garbage collector, referências persistentes significa pensar em ciclo de vida. É necessário entender quando um dado começa a ser necessário e quando ele deve deixar de existir. Remover listeners, limpar estruturas, encerrar timers e limitar escopos são práticas fundamentais para evitar retenções indevidas.
+
+Em resumo, referências persistentes definem quanto tempo um valor permanece vivo na memória. Quando bem controladas, são ferramentas úteis. Quando negligenciadas, tornam-se a principal causa de vazamentos de memória em aplicações javascript de médio e grande porte. 
+

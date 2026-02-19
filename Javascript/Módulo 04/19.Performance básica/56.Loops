@@ -1,0 +1,11 @@
+Quando falamos de loop sob a ótica de performance em javascript, o foco não está apenas em repetir uma operação, mas em entender o custo real dessa repetição e como ela impacta o tempo de execução e o uso de recursos. Loops são uma das estruturas mais utilizadas da linguagem e, justamente por isso, podem se tornar um ponto crítico de performance quando mal utilizados. 
+
+Cada iteração de um loop adiciona trabalho ao runtime. Quanto maior o número de iterações, maior o tempo gasto na execução. Em cenários simples isso é irrelevante, mas em operações que lidam com grandes volumes de dados ou que são executadas com alta frequência, o custo acumulado se torna significativo. Por isso, pensar em performance ao usar loops é pensar em escala, não apenas em correção lógica.
+
+O tipo de loop utilizado também influencia o desempenho. Estruturas como for, while e for...of possuem características diferentes, mas, na maioria dos casos, a diferença de performance entre elas é secundária quando comparada ao que acontece dentro do loop. Operações custosas, como acessos repetidos a estruturas complexas, chamadas de função desnecessárias ou cálculos redundantes, têm impacto muito maior do que a escolha da sintaxe do loop em si.
+
+Outro ponto fundamental é evitar trabalho repetido. Calcular o mesmo valor a cada iteração, acessar propriedades profundamente aninhadas ou executar operações que poderiam ser feitas uma única vez fora do loop são padrões comuns que degradam a performance. Otimizar loops muitas vezes significa mover lógica para fora deles, reduzir o número de operações internas e minimizar efeitos colaterais. 
+
+Loops também interagem diretamente com o modelo de execução do javascript. Como a linguagem é single-threaded, loops longos e síncronos podem bloquear a thread principal, impedindo a execução de outras tarefas, como renderização da interface ou processamento de eventos. Em ambientes como o navegador, isso pode resultar em interfaces travadas e experiência ruim para o usuário. 
+
+Em resumo, pensar em loops com foco em performance é pensar em custo por iteração, volume de dados e impacto no fluxo de execução. Um loop eficiente não é apenas aquele que funciona, mas aquele que executa a quantidade mínima de trabalho necessário, pelo menor tempo possível, sem bloquear desnecessariamente o restante do sistema. 

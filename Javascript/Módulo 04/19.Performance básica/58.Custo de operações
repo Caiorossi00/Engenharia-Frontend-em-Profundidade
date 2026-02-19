@@ -1,0 +1,11 @@
+O custo de operações em javascript se refere ao preço real, em tempo e recursos, de cada ação executada pelo código. Em termos de performance, não basta saber quantas vezes algo acontece, é preciso entender o que está sendo feito em cada passo e quão caro é isso para o runtime. 
+
+Nem todas as operações têm o mesmo custo. Operações simples, como atribuições, comparações diretas ou incrementos, são extremamente baratas. Já operações mais complexas, como manipulação de strings grandes, criação de objetos, cópias de arrays, chamadas de função frequentes ou acesso a estruturas profundamente aninhadas, possuem um custo maior. Em loops ou fluxos repetitivos, essa diferença se acumula rapidamente. 
+
+Alocação de memória é um dos custos mais relevantes. Criar novos objetos, arrays ou closures envolve trabalho extra do runtime, além de pressionar o garbage collector. Em abordagens imutáveis, por exemplo, cada atualização cria novas estruturas, o que é desejável do ponto de vista de previsibilidade, mas precisa ser equilibrado para não gerar alocações excessivas em caminhos críticos de execução. 
+
+Acesso a dados também possui custo variável. Acessos diretos a variáveis locais são mais baratos do que acessos a propriedades em objetos, e estes, por sua vez, são mais baratos do que acessos repetidos a estruturas profundas. Quando esse tipo de acesso ocorre dentro de loops, pequenas decisões de estrutura podem ter impacto perceptível na performance. 
+
+Chamadas de função são outro ponto importante. Embora essenciais para organização e clareza, funções introduzem overhead de chamada e criação de contexto de execução. Em código crítico de alta frequência, funções excessivamente pequenas e chamadas repetidas podem se tornar um gargalo, especialmente quando poderiam ser resolvidas com lógica direta ou menos abstrações naquele ponto específico.
+
+Por fim, o custo de operações deve ser sempre analisado com o contexto. Otimizar sem necessidade leva a código mais complexo e menos legível. A ideia não é evitar operações custosas a qualquer preço, mas reconhecer onde elas estão, entender seu impacto e tomar decisões conscientes quando a performance realmente importa. Performance saudável nasce do equilíbrio entre clareza, correção e eficiência. 

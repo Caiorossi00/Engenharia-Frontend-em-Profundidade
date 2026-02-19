@@ -1,0 +1,12 @@
+No javascript, classes são uma abstração sintática introduzida para tornar o uso da herança prototipal mais familiar e organizada, especialmente para quem vem de linguagens orientadas a classes. Apesar da sintaxe, o modelo subjacente continua sendo o de protótipos. A palavra-chave class não cria um novo sistema de herança, ela apenas fornece uma forma mais clara de definir funções construtoras e métodos associados ao protótipo.
+
+Uma classe define um molde para criação de objetos. Dentro dela, o método especial constructor é responsável por inicializar a instância, ou seja, configurar o estado inicial do objeto no momento em que ele é criado. O constructor é executado automaticamente quando a classe é instanciada com new, e é nele que normalmente são atribuídas propriedades à instância. 
+
+O corpo de uma classe não é executado como código comum. Ele é avaliado de uma vez e seus métodos são adicionados ao protótipo da classe, não às inatâncias individuais. Isso significa que métodos definidos em uma classe são compartilhados entre todas as instâncias, evitando duplicação de comportamento e uso desnecessário de memória. 
+
+O constructor tem um papel específico dentro desse modelo. Ele não retorna explicitamente o objeto criado, pois isso é feito automaticamente pelo javascript, a menos que um retorno explícito de outro objeto seja fornecido. Seu foco é preparar a instância, atribuindo valores iniciais e garantindo que o objeto esteja em um estado válido após a criação.
+
+É importante notar que classes em javascript possuem regras próprias de escopo e hoisting. Diferentemente de function declarations, classes não são içadas da mesma forma. Elas existem em um estado temporal conhecido como temporal dead zone, o que impede seu uso antes da declaração. Esse comportamento reforça a previsibilidade do código e evita dependências implícitas difíceis de rastrear.
+
+Em resumo, class e constructor fornecem uma sintaxe mais declarativa para trabalhar com protótipos, permitindo definir estrutura e inicialização de objetos de forma clara, sem alterar o modelo fundamental de herança e delegação do javascript. 
+

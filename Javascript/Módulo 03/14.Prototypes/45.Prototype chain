@@ -1,0 +1,12 @@
+No javascript, a prototype chain é o mecanismo que define com o o acesso a propriedades e métodos funciona quando eles não são encontrados diretamente em um objeto. Em vez de copiar comportamento entre estruturas, a linguagem utiliza um sistema baseado em delegação, onde um objeto pode "apontar" para outro objeto como seu protótipo.
+
+Todo objeto com javascript possui uma referência interna para outro objeto, conhecida como Prototype. Essa referência cria uma ligação entre objetos. Quando uma propriedade ou método é acessado e não existe no próprio objeto, o javascript automaticamente procura essa propriedade no objeto apontado pelo seu protótipo. Se ainda assim não encontrar, continua subindo na cadeia, repetindo o processo até chegar ao topo da cadeia.
+
+Em sequência de buscas é chamada de prototype chain. O topo dessa cadeia é normalmente o protótipo base dos objetos, que fornece métodos comuns como conversão para string ou verificação de propriedades. Quando a busca chega a esse ponto e a propriedade ainda não é encontrada, o resultado final é undefined.
+
+O aspecto mais importante de prototype chain é que ela não copia dados. Os objetos compartilham comportamento por meio de referências. Isso significa que vários objetos podem delegar chamadas ao mesmo protótipo, economizando memória e mantendo consistência de comportamento. Ao mesmo tempo, cada objeto pode sobrescrever propriedades localmente sem afetar os demais. 
+
+Na prática, isso explica por que métodos parecem "existir" em objetos mesmo quando não foram definidos neles diretamente. Arrays, por exemplo, não possuem seus métodos individualmente, eles os acessam através da cadeia de protótipos. Esse modelo também permite estender comportamentos de forma controlada,  adicionando métodos a um protótipo compartilhado.
+
+Em resumo, a prototype chain é o caminho que o javascript percorre ao tentar resolver uma propriedade: começa no próprio objeto, segue para o protótipo, depois para o protótipo do protótipo, e assim por diante. Esse mecanismo é a base do modelo de herança do javascript e sustenta como reutilização e compartilhamento de comportamento funcionam na linguagem. 
+

@@ -1,0 +1,13 @@
+Antes de falar em controle de execução, é importante entender o que são debounce e throttle. Ambos são padrões usados para lidar com funções que podem ser chamadas muitas vezes em um curto período de tempo, geralmente disparadas por eventos como scroll, resize, input ou mousemove. Em vez de permitir que a função executa em todas as ocorrências do evento, debounxe e throttle impõem regras para reduzir a frequência de execução, evitando desperdício de processamento e melhorando a performance da aplicação. 
+
+No contexto de debounce e throttle, o conceito de controle de execução está diretamente ligado a limitar com que frequência uma determinada lógica pode ser executada. Em aplicações javascript, especialmente em ambientes com interação do usuário, certos eventos podem disparar dezenas ou centenas de vezes em um curto intervalo de tempo, e executar a lógica completa a cada disparo pode ser desnecessário e custoso.
+
+Controle de execução significa introduzir regras que governam quando uma função pode rodar, independentemente de quantas vezes ela seja solicitada. Em vez de responder a todos os eventos imediatamente, o código passa a filtrar essas execuções, reduzindo carga computacional, evitando trabalho redundante e melhorando a responsividade do sistema.
+
+O debounce controla a execução adiando a função até que um período de inatividade seja atingido. Enquanto novos eventos continuam acontecendo, a execução é constantemente postergada. Esse modelo é útil quando o interesse está apenas no estado final após uma sequência de ações, e não em cada passo intermediário. O foco é evitar execuções desnecessárias durante picos dos eventos.
+
+O throttle, por outro lado, impõe um intervalo mínimo entre execuções. Mesmo que os eventos disparem continuamente, a função só pode ser executada uma vez dentro de um período definido. Esse modelo é adequado quando se deseja responder continuamente ao evento, mas de forma controlada, garantindo que o código rode em uma frequência previsível. 
+
+Ambas as técnicas existem para proteger o sistema contra sobrecarga e para alinhar a execução do código com a real necessidade da aplicação. Elas não alteram o comportamento lógico do programa, mas regulam seu ritmo, tornando-o mais eficiente e estável sob alta demanda de eventos.
+
+Em essência, controle de execução com debounce e throttle é uma estratégia de performance. Ele permite que o javascript lide melhor com fluxos intensos de eventos, mantendo o código responsivo, previsível e alinhado às capacidades reais do runtime e do ambiente em que está sendo executado.

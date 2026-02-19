@@ -1,0 +1,11 @@
+No javascript, criação de erros é o mecanismo pelo qual o próprio código sinaliza que algo inesperado, inválido ou inconsistente aconteceu durante a execução. Em vez de permitir que o programa continue em um estado incorreto, o desenvolvedor pode interromper o fluxo normal e comunicar explicitamente que uma regra foi violada ou uma condição não foi atendida. 
+
+Erros em javascript são representados por objetos, sendo Error a base para todos os tipos de erro. Ao criar um erro, o desenvolvedor encapsula uma mensagem e um contexto que descrevem o problema ocorrido. Esse objeto não causa nenhum efeito por si só até que seja lançado. O ato de lançar o erro é que altera o fluxo de execução, interrompendo o código atual e transferindo o controle para o mecanismo de tratamento de erros.
+
+Criar erros manuais é essencial para validações. Quando uma função recebe dados inválidos, encontra um estado impossível ou detecta uma violação de contrato, lançar um erro é uma forma clara de impedir a propagação de um valor incorreto pelo sistema. Isso torna as falhas explícitas e mais fáceis de identificar, em vez de gerar comportamentos silenciosos ou resultados incorretos. 
+
+Além do tipo genérico Error, o javascript possui erros especializados, como TypeError, RangeError e ReferenceErros, que comunicam categorias específicas de falha. Usar o tipo de erro adequado melhora a semântica do código e facilita o tratamento posterior, pois quem consome aquele erro consegue entender melhor sua natureza sem precisar analisar apenas a mensagem textual. 
+
+Criar erros não é apenas uma decisão técnica, mas também de design. Um erro bem criado carrega uma mensagem clara, contextualiza o problema e indica que o fluxo normal não pode continuar. Ele estabelece um limite explícito entre estados válidos e inválidos da aplicação, funcionando como um mecanismo de proteção e documentação do comportamento esperado do código. 
+
+Em resumo, a criação de erros permite que o desenvolvedor transforme falhas em eventos controlados. Ao invés de deixar o sistema seguir com dados inválidos, o código passa a declarar, de forma clara, quando algo deu errado, facilitando o diagnóstico, o tratamento e a manutenção do software. 

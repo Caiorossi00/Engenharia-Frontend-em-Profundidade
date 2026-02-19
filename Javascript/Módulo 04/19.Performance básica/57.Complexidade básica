@@ -1,0 +1,11 @@
+A complexidade básica está relacionada a como o custo de um trecho de código cresce à medida que o volume de dados aumenta. Em termos de performance, ela serve como uma ferramenta mental para prever se uma solução vai escalar bem ou se se tornará um gargalo conforme a aplicação cresce. No javascript, entender complexidade não é sobre matemática avançada, mas sobre reconhecer padrões de custo. 
+
+A forma mais comum de expressar complexidade é em termos de tempo de execução, observando quantas operações são realizadas em função do tamanho da entrada. Um código cuja execução cresce de forma proporcional ao número de elementos processados possui complexidade linear. Já quando o número de operações cresce muito mais rápido que o volume de dados, como em loops aninhados, o custo pode se tornar quadrático, impactando diretamente a performance. 
+
+Loops simples geralmente indicam crescimento linear, enquanto loops dentro de loops tendem a multiplicar o custo. O problema não é a existência de loops aninhados em si, mas o tamanho dos conjuntos sobre os quais eles operam. Um loop aninhado que percorre pequenas coleções pode ser aceitável, enquanto o mesmo padrão aplicado a grandes volumes de dados rapidamente se torna inviável. 
+
+Além do tempo, existe também a complexidade de espaço, que se refere ao uso de memória. Criar novas estruturas, manter cópias de dados ou armazenar resultados intermediários aumenta o consumo de memória. Em estratégias imutáveis, por exemplo, há um trade-off entre previsibilidade e custo de alocação, que deve ser considerado conforme o cenário. 
+
+Pensar em complexidade básica ajuda a tomar decisões antes mesmo de escrever código. Ao analisar uma solução, é possível antecipar se ela fará trabalho desnecessário, se repete operações ou se cresce de forma desproporcional ao tamanho dos dados. Isso evita otimizações tardias e reduz a necessidade de correções quando o sistema já está em produção. 
+
+Em essência, complexidade básica é uma forma de raciocinar sobre performance de maneira estrutural. Ela não substitui medicações reais, mas fornece um modelo mental claro para escolher abordagens mais eficientes em evitar padrões que se degradam rapidamente conforme o sistema escala. 

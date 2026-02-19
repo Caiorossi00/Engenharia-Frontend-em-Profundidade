@@ -1,0 +1,11 @@
+As palavras-chave extends e super são usadas em javascript para expressar herança entre classes, funcionando como uma camada sintática sobre a herança prototipal. Elas tornam explícita a relação entre uma classe base e uma classe derivada, sem mudar o funcionamento interno do modelo de protótipos.
+
+O extends é utilizado na declaração de uma classe para indicar que ela herda de outra. Ao fazer isso, a nova classe passa a ter acesso aos métodos definidos no protótipo da classe base, além de poder definir seus próprios comportamentos. Internamente, o javascript conecta o protótipo da classe filha ao protótipo da classe pai, criando uma prototype chain entre elas. 
+
+O super é o mecanismo que permite acessar a classe base a partir da classe derivada. Dentro do constructor, super representa a chamada ao construtor da classe pai. Essa chamada é obrigatória antes de acessar this em classes que estendem outra, pois é o constructor da classe base que inicializa a instância. Sem essa inicialização, o objeto ainda não está completamente criado. 
+
+Além do construtor, super também pode ser usado para acessar métodos da classe pai. Quando um método da classe filha chama super.metodo(), o javascript procura esse método no protótipo da classe base e o executa com o contexto correto. Isso permite reaproveitar comportamentos existentes e estendê-los, em vez de reimplementá-los.
+
+Esse mecanismo deixa claro que a herança em javascript não é baseada em cópia de código ou estado, mas em delegação. A classe filha não duplica os métodos da classe pai, ela apenas delega a resolução desses métodos ao protótipo superior quando necessário. Isso mantém o sistema flexível e alinhado com o modelo prototipal da linguagem.
+
+Em síntese, extends define a relação de herança entre classes, enquanto super fornece o acesso controlado à classe base, tanto para inicialização quanto para reutilização de comportamento. Juntas, essas palavras-chave tornam a herança mais legível e estruturada, sem ocultar o funcionamento real do javascript. 

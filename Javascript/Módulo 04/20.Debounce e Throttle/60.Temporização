@@ -1,0 +1,13 @@
+Temporização, no contexto de debounce e throttle, é o mecanismo que define quando uma função pode ou não ser executada com base no tempo. Ela é o elemento central dessas duas técnicas, pois é o tempo, e não a quantidade de eventos, que governa a liberação ou o bloqueio da execução.
+
+Em javascript, a temporização normalmente é implementada com recursos como setTimeout, clearTimeout e, em alguns casos, controle manual de timestamps (Date.now() ou performance.now()). Esses mecanismos permitem medir intervalos e decidir se uma função deve rodar agora, depois, ou ser ignorada. 
+
+No debounce, a temporização funciona como um contador regressivo. Cada novo evento reinicia o temporizador, adiando a execução da função. A função só é executada quando o tempo configurado passa sem que nenhum novo evento ocorra. Ou seja, o tempo representa um período de "silêncio" necessário para que a ação seja considerada válida. 
+
+Já no throttle, a temporização atua como um limitador fixo. Após a execução da função, inicia-se um intervalo durante o qual novas chamadas são bloqueadas ou ignoradas. Quando esse intervalo termina, a função pode ser executada novamente. Aqui, o tempo define a frequência máxima permitida da execução.
+
+Do ponto de vista de performance, a temporização evita picos de processamento concentrados em curtos intervalos. Em vez de executar lógica pesada repetidamente, o código distribui ou reduz essas execuções ao longo do tempo, prevenindo gargalos no main thread e mantendo a aplicação responsiva. 
+
+Outro aspecto importante da temporização é a previsibilidade. Com intervalos bem definidos, o comportamento da aplicação se torna mais consistente, facilitando o raciocínio sobre quando uma ação ocorrerá. Isso é especialmente relevante em interfaces ricas, onde múltiplos eventos podem competir por recursos. 
+
+Em resumo, temporização é o componente que transforma debounce e throttle em ferramentas eficazes de controle de execução. Ela permite que o código reaja a eventos de forma inteligente, equilibrando responsividade e eficiência, e garantindo que o tempo trabalhe a favor da performance, e não contra ela. 

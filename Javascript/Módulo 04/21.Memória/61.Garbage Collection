@@ -1,0 +1,13 @@
+Garbage collection é o mecanismo automático pelo qual o javsascript gerencia memória, identificando e liberando regiões que não são mais acessíveis pelo programa. Diferente de linguagens que exigem liberação manual de memória, o javascript delega essa responsabilidade ao motor de execução, como V8 ou SpiderMonkey, permitindo que o desenvolvedor foque na lógica sem lidar diretamente com alocação e desalocação.
+
+O funcionamento do garbage collector é baseado principalmente no conceito de alcançabilidade. Um valor é considerado vivo enquanto puder ser alcançado a partir de referências raiz, como variáveis globais, o escopo atual de execução ou objetos ativos na call stack. Quando um valor deixa de ser alcançável por qualquer caminho válido, ele se torna elegível para coleta.
+
+Na prática, sempre que você cria um objeto, array ou função, o motor aloca memória no heap. Se todas as referências a esse valor forem removidas ou sobrescritas, aquela área de memória deixa de ter utilidade. O garbage collector periodicamente percorre o grafo de referências, marca os valores ainda acessíveis e libera os que não estão mais conectados a nenhuma raiz, processo conhecido como mark and sweep.
+
+Esse processo não acontece imediatamente após uma variável perder referência. A coleta ocorre em ciclos, de forma oportunista, equilibrando uso de memória e impacto na performance. Por isso, um objeto pode permanecer na memória por algum tempo mesmo após não ser mais utilizado, sem que isso represente um erro. 
+
+É importante entender que o garbage collector lida com memória, não com intenção. Se uma referência ainda existir, mesmo que o valor não seja mais lógicamente necessário, ele continuará ocupando espaço. Por isso, estruturas que mantêm referências vivas (como closures, listeners ou variáveis globais) influenciam diretamente o comportamento da coleta.
+
+Em termos de performance, o garbage collection é essencial para evitar consumo infinito de memória, mas também tem um custo computacional. Execuções frequentes ou volumes grandes de objetos descartáveis podem gerar pausas perceptíveis. Por isso, escrever código que respeite os ciclos de vida claros e evite retenções desnecessárias é parte fundamental de aplicações robustas. 
+
+Em resumo, garbage collection é o sistema que mantém a saúde da memória no javascript, removendo automaticamente o que não é mais alcançável. Compreender seu funcionamento ajuda o desenvolvedor a evitar armadilhas de consumo excessivo e a escrever código mais previsível, eficiente e seguro. 

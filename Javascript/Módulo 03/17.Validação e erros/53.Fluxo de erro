@@ -1,0 +1,9 @@
+O fluxo de erro no javascript descreve o caminho que a execução do código percorre quando o erro é lançado. Diferentemente do fluxo normal, que segue linha a linha de forma previsível, o fluxo de erro interrompe imediatamente a execução atual e procura por um ponto apropriado onde esse erro possa ser tratado. 
+
+Quando um erro é lançado, o javascript interrompe a execução da função corrente e começa a "desempilhar" a call stack, retornando pelos contextos de execução até encontrar um bloco capaz de lidar com aquele erro. Esse ponto é normalmente um try/catch. Se nenhum manipulador for encontrado ao longo da pilha de chamadas, o erro chega ao topo da execução e o programa é encerrado, exibindo a mensagem e o stack trace. 
+
+Esse comportamento faz com que erros se propaguem naturalmente. Uma função não precisa conhecer todos os contextos em que será usada para lançar um erro. Ela apenas sinaliza que algo deu errado, e a decisão de tratar ou não esse erro fica para quem a chamou. Isso separa a responsabilidade de detectar o problema da responsabilidade de decidir como reagir a ele. 
+
+Em código assíncrono, o fluxo de erro segue a mesma lógica conceitual, mas com mecanismos próprios. Em promises, erros lançados ou rejeições percorrem a cadeia até encontrarem um catch. Em funções async, um erro lançado se comporta como uma promise rejeitada, podendo ser capturado com try/catch. Em todos os casos, a ideia central é a mesma: o erro sobe até alguém assumir a responsabilidade por ele.
+
+Compreender o fluxo de erro é essencial para evitar tratamentos redundantes ou inconsistentes. Capturar erros cedo demais pode esconder problemas e dificultar o diagnóstico, enquanto nunca capturá-los pode derrubar a aplicação inteira. O equilíbrio está em tratar o erro no nível certo de abstração, onde há contexto suficiente para decidir se ele pode ser recuperado, transformado ou apenas registrado.

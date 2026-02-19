@@ -6,7 +6,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## MÓDULO 0 – Intenção, Método e Preparação Conceitual
+## [MÓDULO 0](./React/Módulo%200) – Intenção, Método e Preparação Conceitual
 
 **Objetivo:** Contextualizar o leitor sobre o propósito do material, estabelecer as premissas conceituais necessárias para acompanhar os módulos avançados e apresentar o formato pedagógico adotado no projeto.
 
@@ -19,7 +19,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 1 – Filosofia e Paradigma do React
+## [Módulo 1](./React/Módulo%201) – Filosofia e Paradigma do React
 
 **Objetivo:** Entender o _porquê_ do React existir e o que ele representa no contexto da engenharia de interfaces.
 
@@ -34,7 +34,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 2 – O motor do React (Virtual DOM e Fiber)
+## [Módulo 2](./React/Módulo%202) – O motor do React (Virtual DOM e Fiber)
 
 **Objetivo:** Entender como o React transforma estado em UI e o que realmente acontece na renderização.
 
@@ -50,7 +50,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 3 – Hooks em nível conceitual
+## [Módulo 3](./React/Módulo%203) – Hooks em nível conceitual
 
 **Objetivo:** Compreender o funcionamento interno, as restrições e as razões conceituais dos hooks.
 
@@ -69,7 +69,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 4 – Estado, dados e arquitetura
+## [Módulo 4](./React/Módulo%204) – Estado, dados e arquitetura
 
 **Objetivo:** Entender como o React lida com o estado, quais são os tipos e os padrões arquiteturais envolvidos.
 
@@ -87,7 +87,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 5 – Renderização e performance
+## [Módulo 5](./React/Módulo%205) – Renderização e performance
 
 **Objetivo:** Compreender o modelo de renderização e como o React otimiza o processo.
 
@@ -103,7 +103,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 6 – Composição e padrões de arquitetura
+## [Módulo 6](./React/Módulo%206) – Composição e padrões de arquitetura
 
 **Objetivo:** Entender como estruturar componentes e lógica de forma escalável.
 
@@ -119,7 +119,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 7 – React moderno e Server Components
+## [Módulo 7](./React/Módulo%207) – React moderno e Server Components
 
 **Objetivo:** Entender a nova arquitetura e a separação entre client e server components.
 
@@ -134,7 +134,7 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
-## Módulo 8 – Filosofia de Engenharia Frontend
+## [Módulo 8](./React/Módulo%208) – Filosofia de Engenharia Frontend
 
 **Objetivo:** Consolidar mentalidade e princípios de decisão técnica em React.
 
@@ -149,3 +149,217 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 - [x] Como pensar como um engenheiro de interfaces - (10/12/2025)
 
 ---
+
+# JavaScript - Guia de Bolso para Desenvolvedores
+
+## MÓDULO 0 – Intenção, Método e Preparação Conceitual
+
+**Tópicos:**
+
+- TBD
+
+---
+
+## Módulo 1 – Fundamentos da Linguagem
+
+**Objetivo:**  
+Compreender como o JavaScript representa valores, realiza coerções e compara dados em tempo de execução.
+
+### 01. Tipos e coerção
+
+- [x] Tipos primitivos - (17/01/2026)
+- [x] `typeof`- (17/01/2026)
+- [x] `null` vs `undefined` - (19/01/2026)
+- [x] `==` vs `===` - (19/01/2026)
+
+---
+
+### 02. Variáveis e escopo
+
+- [x] `var`, `let`, `const` - (19/01/2026)
+- [x] Escopo global, de função e de bloco - (19/01/2026)
+- [x] Hoisting de variáveis e funções - (19/01/2026)
+
+---
+
+### 03. Funções
+
+- [x] Function declaration - (20/01/2026)
+- [x] Function expression - (20/01/2026)
+- [x] Arrow functions - (20/01/2026)
+- [x] Diferenças semânticas e de uso - (20/01/2026)
+
+---
+
+### 04. Contexto (`this`)
+
+- [x] `this` no escopo global - (20/01/2026)
+- [x] `this` em métodos de objeto - (20/01/2026)
+- [x] `this` em funções tradicionais - (20/01/2026)
+- [x] `this` em arrow functions - (20/01/2026)
+- [x] `bind`, `call`, `apply` - (20/01/2026)
+
+---
+
+### 05. Arrays
+
+- [x] Estrutura de arrays - (21/01/2026)
+- [x] Métodos (`map`, `filter`, `reduce`, `find`) - (21/01/2026)
+- [x] Imutabilidade - (21/01/2026)
+
+---
+
+### 06. Objetos
+
+- [x] Objetos literais - (22/01/2026)
+- [x] Propriedades e métodos - (22/01/2026)
+- [x] Acesso dinâmico - (22/01/2026)
+- [x] Mutação vs cópia - (22/01/2026)
+- [x] Spread operator - (22/01/2026)
+
+---
+
+## Módulo 2 – Assíncronismo e Modelo de Execução
+
+### 07. Execução síncrona e Call Stack
+
+- [x] Execução passo a passo - (23/01/2026)
+- [x] Pilha de chamadas - (23/01/2026)
+- [x] Ordem de execução - (23/01/2026)
+
+---
+
+### 08. Callbacks
+
+- [x] Funções de callback - (24/01/2026)
+- [x] Execução adiada - (24/01/2026)
+- [x] Callback hell (conceito) - (24/01/2026)
+
+---
+
+### 09. Promises
+
+- [x] Criação de Promise - (26/01/2026)
+- [x] Estados - (26/01/2026)
+- [x] `then`, `catch` - (26/01/2026)
+- [x] Encadeamento - (26/01/2026)
+
+---
+
+### 10. Async / Await
+
+- [x] Funções assíncronas - (27/01/2027)
+- [x] Fluxo sequencial vs paralelo - (27/01/2026)
+
+---
+
+### 11. Tratamento de erros assíncronos
+
+- [x] try / catch - (28/01/2026)
+- [x] Erros em funções assíncronas - (28/01/2026)
+
+---
+
+### 12. Event Loop
+
+- [x] Call Stack - (29/01/2026)
+- [x] Microtasks - (29/01/2026)
+- [x] Macrotasks - (29/01/2026)
+- [x] Ordem de execução - (29/01/2026)
+
+---
+
+## Módulo 3 – Estrutura da Linguagem
+
+### 13. Closures
+
+- [x] Escopo léxico - (30/01/2026)
+- [x] Persistência de estado - (30/01/2026)
+
+---
+
+### 14. Prototypes
+
+- [x] Prototype chain - (01/02/2026)
+- [x] Herança prototipal - (01/02/2026)
+
+---
+
+### 15. Classes
+
+- [x] class, constructor - (04/02/2026)
+- [x] extends, super - (04/02/2026)
+- [x] Sobrescrita - (04/02/2026)
+
+---
+
+### 16. Módulos
+
+- [x] import / export - (05/02/2026)
+- [x] Organização e responsabilidade - (05/02/2026)
+
+---
+
+### 17. Validação e erros
+
+- [x] Criação de erros - (06/02/2026)
+- [x] Fluxo de erro - (06/02/2026)
+
+---
+
+### 18. Imutabilidade
+
+- [x] Estado imutável - (07/02/2026)
+- [x] Cópia rasa vs profunda - (07/02/2026)
+
+---
+
+## Módulo 4 – Robustez e Qualidade
+
+### 19. Performance básica
+
+- [x] Loops - (09/02/2026)
+- [x] Complexidade básica - (09/02/2026)
+- [x] Custo de operações - (09/02/2026)
+
+---
+
+### 20. Debounce e Throttle
+
+- [x] Controle de execução - (11/02/2026)
+- [x] Temporização - (11/02/2026)
+
+---
+
+### 21. Memória
+
+- [x] Garbage Collection - (12/02/2026)
+- [x] Vazamentos - (13/02/2026)
+- [x] Referências persistentes - (13/02/2026)
+
+---
+
+### 22. Testes básicos
+
+- [x] Testes unitários - (19/02/2026)
+- [x] Casos de teste - (19/02/2026)
+
+---
+
+### 23. Consolidação de assíncronismo
+
+- Promises
+- `async/await`
+- Event Loop
+
+---
+
+### 24. Consolidação estrutural
+
+- Closures
+- Prototypes
+- Classes
+
+---
+
+Este plano serve como **base conceitual para qualquer framework ou ambiente JavaScript**, garantindo domínio real da linguagem e capacidade de decisão técnica consciente.

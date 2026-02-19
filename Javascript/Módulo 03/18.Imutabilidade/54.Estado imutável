@@ -1,0 +1,11 @@
+O conceito de estado imutável no javascript está ligado à ideia de que, uma vez criado, um valor ou estrutura não deve ser alterado diretamente. Em vez de modificar o estado existente, cria-se uma nova versão dele com as mudanças necessárias. Essa abordagem não é uma regra imposta pela linguagem, mas uma prática adotada para tornar o código mais previsível e seguro. 
+
+Quando falamos em estado, normalmente estamos nos referindo a dados que representam a situação atual de uma aplicação, como objetos, arrays ou estruturas mais complexas. Tornar esse estado imutável significa evitar mutações diretas, como alterar propriedades de um objeto ou elementos de um array já existente. Em vez disso, o código cria uma nova estrutura que reflete o novo estado, preservando o estado anterior intacto. 
+
+A principal vantagem do estado imutável é a previsibilidade. Como o estado antigo nunca é alterado, fica mais fácil entender como a aplicação evolui ao longo do tempo. Cada mudança gera uma nova versão dos dados, o que reduz efeitos colaterais e evita situações em que diferentes partes do código alteram o mesmo objeto de forma inesperada. Isso é especialmente importante em aplicações maiores ou com fluxo de dados complexo.
+
+Outro benefício importante é a facilidade de comparação e rastreamento de mudanças. Quando o estado é imutável, é possível saber se algo mudou simplesmente comparando referências. Se a referência é diferente, o estado mudou, se é a mesma, o estado permanece igual. Esse modelo é amplamente explorado por bibliotecas e frameworks que dependem de detecção eficiente de mudanças, como no gerenciamento de estado e renderização de interfaces.
+
+Além disso, o estado imutável favorece testes e depuração. Funções que recebem um estado e retornam um novo estado, pois o resultado depende apenas das entradas. Isso aproxima o código de um estilo funcional, no qual efeitos colaterais são reduzidos ao mínimo. 
+
+Em resumo, estado imutável é uma forma de tratar dados como valores, e não como entidades mutáveis compartilhadas. Ao evitar mutações diretas e trabalhar sempre com novas versões do estado, o código se torna mais confiável, previsível e alinhado a práticas modernas de engenharia de software.

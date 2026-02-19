@@ -1,0 +1,11 @@
+A sobrescrita ocorre quando uma classe derivada define um método ou propriedade com o mesmo nome de um método ou propriedade existente na classe base. Nesse caso, a definição da classe filha tem prioridade durante a resolução de propriedades, fazendo com que o comportamento original seja substituído ou especializado. 
+
+Quando um método é sobrescrito, o javascript não remove nem altera o método da classe base. O que acontece é uma mudança na ordem de resolução: ao procurar o método, o runtime encontra primeiro a implementação presente no protótipo da classe filha. Somente se ela não existir é que a busca continua para o protótipo da classe pai. Esse comportamento segue exatamente o funcionamento da prototype chain.
+
+A sobrescrita é usada para especializar comportamentos herdados. Uma classe filha pode manter a mesma interface da classe base, mas alterar a forma como determinado método funciona, adaptando-o a um contexto mais específico. Isso permite polimorfismo, onde objetos de classes diferentes respondem ao mesmo método de maneiras distintas. 
+
+Em muitos casos, a sobrescrita não elimina totalmente o comportamento original, mas o estende. Nesses cenários, o método sobrescrito chama o método da classe base por meio de super, executa a lógica original e adiciona ou modifica parte do comportamento. Essa prática preserva a lógica comum e evita duplicação de código.
+
+É importante entender que a sobrescrita afeta apenas a instância da classe derivada e as classes que herdam dela. A classe base continua intacta, e outras classes que também a estendam não são impactadas. Isso mantém o isolamento e a previsibilidade do sistema de herança.
+
+Em resumo, sobrescrever significa redefinir um comportamento herdado para atender a uma necessidade específica. No javascript, isso pode acontecer por meio da prototype chain, respeitando a ordem de resolução de prioridades, e é um recurso essencial para a construção de hierarquias de objetos flexíveis e reutilizáveis.

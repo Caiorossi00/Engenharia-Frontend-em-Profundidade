@@ -1,0 +1,17 @@
+Vazamentos de memória ocorrem quando o garbage collector não consegue liberar memória que, do ponto de visto lógico, já não deveria mais ser utilizada. Isso não acontece por falha do coletor, mas porque o código mantém referências vivas a valores que não são mais necessários, fazendo com que eles continuem sendo considerados alcançáveis. 
+
+Em javascript, um vazamento não significa "memória perdida" e sim memória retida indevidamente. Objetos, arrays ou funções continuam ocupando espaço no heap porque ainda existe algum caminho de acesso até eles, mesmo que nunca mais sejam usados pela aplicação.
+
+Um dos casos mais comuns envolve variáveis globais. Qualquer valor armazenado no escopo global permanece vivo durante todo o ciclo da aplicação. Criar estruturas grandes ou acumular dados globalmente sem controle é uma fonte frequente de vazamentos, especialmente em aplicações de longa duração, como SPAs.
+
+Outro cenário crítico são closures. Quando uma função interna captura variáveis do escopo externo, essas variáveis permanecem na memória enquanto a função existir. Se essa função for armazenada ou registrada (por exemplo, como callback ou listener) e nunca for liberada, todo o escopo capturado continua retido, mesmo que apenas uma pequena parte seja realmente necessária. 
+
+Event listeners não removidos são uma causa clássica de vazamento. Ao adicionar listeners a elementos do DOM ou a objetos globais, o javascript mantém referências às funções associadas. Se o elemento for removido da interface, mas o listener não for explicitamente removido, a memória relacionada pode continuar. 
+
+Estruturas de dados como arrays e objetos que crescem indefinidamente também contribuem para vazamentos. Isso ocorre quando dados são acumulados sem políticas de limpeza, como caches sem limite ou históricos que nunca são descartados. 
+
+É importante destacar que o garbage collector não tem como "adivinhar" a intenção do programador. Se uma referência existe, o valor é considerado válido. Por isso, vazamentos são quase sempre uma consequência de design de ciclo de vida incorreto, e não de erros do runtime.
+
+Em termos de impacto, vazamentos causam aumento progressivo no uso de memória, degradação de performance, pausas mais frequentes do garbage collector e, em casos extremos, falhas por memória. Em aplicações críticas, identificar e evitar vazamentos é essencial para estabilidade a longo prazo. 
+
+Em resumo, vazamentos de memória em javascript surgem quando referências desnecessárias permanecem ativas. Entender como escopo, closures e referências funcionam é fundamental para escrever código que permita ao garbaga collector fazer seu trabalho corretamente. 
