@@ -349,7 +349,7 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
 ### 23. Consolidação de assíncronismo
 
 - [x] Promises - (20/02/2026)
-- `async/await`
+- [x] async/await - (21/02/2026)
 - Event Loop
 
 ---
