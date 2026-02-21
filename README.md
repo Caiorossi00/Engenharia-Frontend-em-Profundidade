@@ -350,7 +350,7 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
 
 - [x] Promises - (20/02/2026)
 - [x] async/await - (21/02/2026)
-- Event Loop
+- [x] Event Loop - (21/02/2026)
 
 ---
 
