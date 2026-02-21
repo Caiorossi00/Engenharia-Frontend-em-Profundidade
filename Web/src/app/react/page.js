@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { reactStructure } from "@/app/data/react";
+import styles from "./page.module.css";
 
 export default function ReactModulesPage() {
   const sortedModules = [...reactStructure.modules].sort(
@@ -7,7 +8,7 @@ export default function ReactModulesPage() {
   );
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>{reactStructure.title}</h1>
 
       <ul>
