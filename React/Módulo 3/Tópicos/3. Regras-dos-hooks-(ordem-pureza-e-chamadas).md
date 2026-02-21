@@ -8,24 +8,24 @@ Mas esse é o ponto crítico, o react não identifica hooks pelos seus nomes, e 
 Quando um componente react é renderizado, ele roda a função do componente do início ao fim.  
 Exemplo simples:
 
-\`\`\`js
+```js
 function Saudacao() {
 const nome = "Caio";
 return <p>Olá, {nome}</p>;
 }
-\`\`\`
+```
 
 O react chama essa função, obtém o JSX e o mostra na tela. Até aqui, tudo é simples e estático, não há estado mudando.  
 Mas, e se quisermos guardar um valor que muda?
 
 Para isso usamos hooks, como useState:
 
-\`\`\`js
+```js
 function Contador() {
 const [count, setCount] = useState(0);
 return <button onClick={() => setCount(count + 1)}>{count}</button>;
 }
-\`\`\`
+```
 
 Aqui acontece algo mágico:
 
