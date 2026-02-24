@@ -357,7 +357,7 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
 ### 24. Consolidação estrutural
 
 - [x] Closures - (24/02/2026)
-- Prototypes
+- [x] Prototypes - (24/02/2026)
 - Classes
 
 ---
