@@ -358,7 +358,7 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
 
 - [x] Closures - (24/02/2026)
 - [x] Prototypes - (24/02/2026)
-- Classes
+- [x] Classes - (26/02/2026)
 
 ---
 
