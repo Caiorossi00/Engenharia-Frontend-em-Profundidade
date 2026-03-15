@@ -6,6 +6,16 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=Caiorossi00%2FReact-em-Profundidade&type=timeline&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
+ </picture>
+</a>
+
 ## [MÓDULO 0](./React/Módulo%200) – Intenção, Método e Preparação Conceitual
 
 **Objetivo:** Contextualizar o leitor sobre o propósito do material, estabelecer as premissas conceituais necessárias para acompanhar os módulos avançados e apresentar o formato pedagógico adotado no projeto.
