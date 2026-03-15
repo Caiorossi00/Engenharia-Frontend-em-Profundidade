@@ -4,10 +4,6 @@ Este repositório organiza meu plano de estudos avançado de React, focando em c
 
 Todas as anotações, exemplos e reflexões sobre os temas estão organizados nas **respectivas pastas de cada módulo** dentro do repositório.
 
----
-
-## Star History
-
 <a href="https://www.star-history.com/?repos=Caiorossi00%2FReact-em-Profundidade&type=timeline&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&theme=dark&legend=top-left" />
