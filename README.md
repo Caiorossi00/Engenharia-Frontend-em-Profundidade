@@ -1,9 +1,16 @@
-# Plano Teórico Avançado – React em Profundidade
+# Engenharia Frontend em Profundidade
 
-Este repositório organiza meu plano de estudos avançado de React, focando em compreender conceitos, filosofia, arquitetura e padrões internos do framework.
+Este repositório documenta um plano de estudos avançado focado em engenharia de frontend, com ênfase na compreensão profunda de JavaScript, React e arquitetura de aplicações.
 
-Todas as anotações, exemplos e reflexões sobre os temas estão organizados nas **respectivas pastas de cada módulo** dentro do repositório.
+O objetivo não é apenas aprender ferramentas, mas desenvolver modelo mental, capacidade de decisão técnica e entendimento dos mecanismos internos que sustentam aplicações modernas.
 
+O conteúdo está organizado em módulos progressivos, cobrindo desde fundamentos da linguagem até padrões avançados de composição, estado e arquitetura.
+
+Todas as anotações, exemplos e reflexões estão distribuídos nas pastas de cada módulo, seguindo uma estrutura pensada para aprendizado contínuo e incremental.
+
+Vale destacar que este plano foi **100% estruturado de forma autoral**, considerando meu nível de experiência, lacunas de conhecimento e objetivos de longo prazo. A organização dos módulos e a progressão dos temas foram pensadas para viabilizar um processo de estudo **contínuo, consistente e incremental**, permitindo evolução real ao longo do tempo. Posteriormente, esse material foi refinado e organizado com o objetivo de **compartilhar o modelo com outros desenvolvedores**, servindo como referência para quem busca aprofundamento técnico além do uso superficial de ferramentas.
+
+## Histórico de estrelas do repositório
 <a href="https://www.star-history.com/?repos=Caiorossi00%2FReact-em-Profundidade&type=timeline&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&theme=dark&legend=top-left" />
@@ -11,6 +18,9 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
  </picture>
 </a>
+<br>
+
+# React em Profundidade
 
 ## [MÓDULO 0](./React/Módulo%200) – Intenção, Método e Preparação Conceitual
 
@@ -157,14 +167,6 @@ Todas as anotações, exemplos e reflexões sobre os temas estão organizados na
 ---
 
 # JavaScript - Guia de Bolso para Desenvolvedores
-
-## MÓDULO 0 – Intenção, Método e Preparação Conceitual
-
-**Tópicos:**
-
-- TBD
-
----
 
 ## Módulo 1 – Fundamentos da Linguagem
 
