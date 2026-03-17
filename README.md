@@ -161,9 +161,8 @@ Vale destacar que este plano foi **100% estruturado de forma autoral**, consider
 
 ---
 
-<img src="./Javascript/js.png">
-
 # JavaScript - Guia de Bolso para Desenvolvedores
+<img src="./Javascript/js.png">
 
 ## Módulo 1 – Fundamentos da Linguagem
 
