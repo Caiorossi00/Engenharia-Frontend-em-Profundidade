@@ -375,4 +375,5 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
    <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
  </picture>
 </a>
+<br>
 Este plano serve como **base conceitual para qualquer framework ou ambiente JavaScript**, garantindo domínio real da linguagem e capacidade de decisão técnica consciente.
