@@ -376,4 +376,3 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
  </picture>
 </a>
 <br>
-Este plano serve como **base conceitual para qualquer framework ou ambiente JavaScript**, garantindo domínio real da linguagem e capacidade de decisão técnica consciente.
