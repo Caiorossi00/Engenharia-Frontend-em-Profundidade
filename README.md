@@ -10,22 +10,12 @@ Todas as anotações, exemplos e reflexões estão distribuídos nas pastas de c
 
 Vale destacar que este plano foi **100% estruturado de forma autoral**, considerando meu nível de experiência, lacunas de conhecimento e objetivos de longo prazo. A organização dos módulos e a progressão dos temas foram pensadas para viabilizar um processo de estudo **contínuo, consistente e incremental**, permitindo evolução real ao longo do tempo. Posteriormente, esse material foi refinado e organizado com o objetivo de **compartilhar o modelo com outros desenvolvedores**, servindo como referência para quem busca aprofundamento técnico além do uso superficial de ferramentas.
 
-## Histórico de estrelas do repositório
-
-<a href="https://www.star-history.com/?repos=Caiorossi00%2FReact-em-Profundidade&type=timeline&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
- </picture>
-</a>
 <br>
 
-<a href="./React em Profundidade - Caiorossi.dev.pdf">
-<img src="./React/react.png" height="30">
-</a>
-
 # React em Profundidade
+<a href="./React em Profundidade - Caiorossi.dev.pdf">
+<img src="./React/react.png">
+</a>
 
 ## [MÓDULO 0](./React/Módulo%200) – Intenção, Método e Preparação Conceitual
 
@@ -171,7 +161,7 @@ Vale destacar que este plano foi **100% estruturado de forma autoral**, consider
 
 ---
 
-<img src="./Javascript/js.png" height="30">
+<img src="./Javascript/js.png">
 
 # JavaScript - Guia de Bolso para Desenvolvedores
 
@@ -377,4 +367,13 @@ Compreender como o JavaScript representa valores, realiza coerções e compara d
 
 ---
 
+## Histórico de estrelas do repositório
+
+<a href="https://www.star-history.com/?repos=Caiorossi00%2FReact-em-Profundidade&type=timeline&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Caiorossi00/React-em-Profundidade&type=timeline&legend=top-left" />
+ </picture>
+</a>
 Este plano serve como **base conceitual para qualquer framework ou ambiente JavaScript**, garantindo domínio real da linguagem e capacidade de decisão técnica consciente.
