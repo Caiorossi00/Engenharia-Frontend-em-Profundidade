@@ -430,7 +430,7 @@ Compreender os mecanismos internos do Redux baseado em Actions síncronas, Reduc
 
 - [x] Filosofia do padrão Ducks: unificação de `types`, `actions` e `reducers` em um único módulo - (10/08/2026)
 - [x] Organização estrutural de arquivos em aplicações enterprise - (12/08/2026)
-- [ ] Separação de responsabilidades entre Duck, Screen e componentes visuais
+- [x] Separação de responsabilidades entre Duck, Screen e componentes visuais - (22/09/2026)
 
 ---
 
