@@ -438,7 +438,7 @@ Compreender os mecanismos internos do Redux baseado em Actions síncronas, Reduc
 
 - [x] Anatomia de um reducer clássico baseado em `switch-case` - (28/09/2026)
 - [x] Tratamento de `action.payload` - (28/09/2026)
-- [ ] Atualizações imutáveis com `spread operator`
+- [x] Atualizações imutáveis com `spread operator` - (23/10/2026)
 - [ ] Normalização de estado e atualização parcial de objetos complexos
 
 ---
